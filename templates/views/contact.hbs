@@ -1,0 +1,158 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="css/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <!-- header section starts  -->
+
+    <header>
+      <h1 class="heading">contact us</h1>
+      <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/about">about</a></li>
+          <li><a href="/service">service</a></li>
+          <li><a href="/contact">contact Us</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact">
+      {{msg}}
+      <form action="/contact" method="POST">
+
+        <input type="text" name="name" class="box" placeholder="name" />
+        <input type="email" name="email" class="box" placeholder="your email" />
+        <input
+          type="text"
+          name="company"
+          class="box"
+          placeholder="Enter your company name"
+        />
+        <input
+          type="text"
+          name="phone"
+          class="box"
+          placeholder="Phone Number"
+        />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          class="box message"
+          placeholder="message"
+        ></textarea>
+
+        <input type="submit" class="btn" value="send message" />
+
+      </form>
+
+      <div class="content">
+
+        <h3>contact us for panel Designing and automation.</h3>
+        <p>Rest assured that we live by our service commitment: Delivering
+          results, exceeding expectations.</p>
+        <div class="icons">
+          <i class="fas fa-map-marker-alt"></i>
+          K-16, Road No. 7, Indraprastha industrial area, Kota-324005 (Raj.)
+          INDIA
+        </div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          techdurgaengineering@gmail.com
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          8104766834( Hitesh Jangid )
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          9414085920( Murari Lal Jangid )
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          8104783849( Sandeep Jangid )
+        </div>
+      </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <div class="footer">
+
+      <div class="box-container">
+
+        <div class="box">
+          <h3>why choose us?</h3>
+          <p>To be a company committed to "ON TIME & ON BUDGET" delivery,
+            guaranteed performance and offering end to end solution to our
+            customer.</p>
+          <a
+            href="https://www.linkedin.com/company/tech-durga-engineering-kota/"
+          ><button class="btn">LinkedIn</button></a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="/">home</a>
+          <a href="/about">about</a>
+          <a href="/service">service</a>
+          <a href="/contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Shree Durga Steel Furniture</h3>
+          <p>Visit for All Type of Almirah and Racks | MS Box (Electrical panels
+            and Box) | SS Box | Specialised in Hostel, Hospital & School
+            Furniture.</p>
+
+          <a href="https://sdsfkota.com"><button class="btn">Visit</button></a>
+        </div>
+
+      </div>
+
+      <h1 class="credit">
+        created by
+        <a href="https://www.linkedin.com/in/ajay-jangid-70620016a/">mr. ajay
+          jangid</a>
+        | all rights reserved.
+      </h1>
+
+    </div>
+
+    <!-- jquery cdn link  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function(){ $('#menu').click(function(){
+      $(this).toggleClass('fa-times'); $('.navbar').toggleClass('nav-toggle');
+      }); $(window).on('load scroll',function(){
+      $('#menu').removeClass('fa-times');
+      $('.navbar').removeClass('nav-toggle'); }); });
+    </script>
+
+  </body>
+</html>

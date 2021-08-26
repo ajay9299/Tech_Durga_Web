@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="css/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <!-- header section starts  -->
+    <header>
+      <h1 class="heading">about us</h1>
+      <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/about">about</a></li>
+          <li><a href="/service">service</a></li>
+          <li><a href="/contact">contact Us</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- about section start  -->
+
+    <section class="about">
+
+      <div class="image">
+        <img src="images/about-img.svg" alt="" />
+      </div>
+
+      <div class="content">
+        <h1>a word about us</h1>
+        <h2>VISION</h2>
+        <p>To be recognized as a leading Engineering company in rajasthan,
+          through our services as per customer satisfaction.</p>
+        <p>
+          The company offers control products such as variable frequency drive,
+          soft starter and automation electrical panel.
+        </p>
+        <p>
+          Our team is composed of technically skilled and highly dedicated
+          personal working cohesively to promote value-added solutions with a
+          competitve pricing structure to suit your needs.
+        </p>
+        <a href="/contact"><button class="btn">learn more</button></a>
+      </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <div class="footer">
+
+      <div class="box-container">
+
+        <div class="box">
+          <h3>why choose us?</h3>
+          <p>To be a company committed to "ON TIME & ON BUDGET" delivery,
+            guaranteed performance and offering end to end solution to our
+            customer.</p>
+          <a
+            href="https://www.linkedin.com/company/tech-durga-engineering-kota/"
+          ><button class="btn">LinkedIn</button></a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="/">home</a>
+          <a href="/about">about</a>
+          <a href="/service">service</a>
+          <a href="/contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Shree Durga Steel Furniture</h3>
+          <p>Visit for All Type of Almirah and Racks | MS Box (Electrical panels
+            and Box) | SS Box | Specialised in Hostel, Hospital & School
+            Furniture.</p>
+
+          <a href="https://sdsfkota.com"><button class="btn">Visit</button></a>
+
+        </div>
+
+      </div>
+
+      <h1 class="credit">
+        created by
+        <a href="https://www.linkedin.com/in/ajay-jangid-70620016a/">mr. ajay
+          jangid</a>
+        | all rights reserved.
+      </h1>
+
+    </div>
+
+    <!-- jquery cdn link  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function(){ $('#menu').click(function(){
+      $(this).toggleClass('fa-times'); $('.navbar').toggleClass('nav-toggle');
+      }); $(window).on('load scroll',function(){
+      $('#menu').removeClass('fa-times');
+      $('.navbar').removeClass('nav-toggle'); }); });
+    </script>
+
+  </body>
+</html>
